@@ -1,4 +1,3 @@
-
 function updateClock() {
     const now = new Date()
     let hours = now.getHours()
@@ -46,10 +45,6 @@ function getCurrentTime() {
     handHours.style.transform = `rotate(${currentHours * 30 + currntMinutes / 2}deg)`;
     handMinutes.style.transform = `rotate(${currntMinutes * 6}deg)`;
     handSeconds.style.transform = `rotate(${currentSeconds * 6}deg)`;
-
-    // Sound effect for second hand
-    let sound = new Audio("./audio/sound.wav");
-    sound.play();
 }
 
 getCurrentTime();
